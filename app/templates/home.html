@@ -1,0 +1,41 @@
+{% extends "landing.html" %}
+{% block content %}
+    <div class="container" style="margin-top: 80px;">
+        <h1 class="text-center">Let's jumpstart your mind</h1>
+        <div class="m-5">
+            <blockquote class="text-center" style="padding: 10px; background-color: rgba(233, 15, 15, 0.801); border: 1px solid #000;">
+                <p class="quote-text">" {{quote.quote}} "</p>
+                <div class="blog-post-actions">
+                    <p class="blog-post-bottom"><i>{{quote.author}}</i></p>
+                </div>
+            </blockquote>
+        </div>
+        <div>
+            {% for post in posts %}
+                <div class="col-md-12">
+                    <article>
+                        <div class="card m-2 p-4">
+                            <div class="card-body">
+                                <div style="display: flex; flex-direction: row;">
+                                    <p class="mr-2">Posted by : {{ post.author.username }}</p>
+                                    <small class="text-muted" style="margin-top: 2px;">Date Posted : {{ post.date_posted.strftime('%d-%m-%Y')}}</small>
+                                </div>
+                                <hr>
+                                <div class="card-title">
+                                    <h2>{{ post.title }}</a></h2>
+                                </div>
+                                <div class="card-text">
+                                    <p>{{ post.content }}</p>
+                                </div>
+                                <hr>
+                                <button class="btn bg-info" type="button">
+                                    <a href="{{url_for('post',post_id=post.id)}}">View</a>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock content %}
