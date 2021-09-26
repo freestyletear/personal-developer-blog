@@ -117,9 +117,13 @@ To fix a bug or enhance an existing module, follow these steps:
 
 ## Known Bugs / Feature Request
 
+* As off the date this was documented there were no bugs detected.
 * If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/freestyletear/personal-dev-blog/issues/new) by including your search query and the expected result.
 * If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/freestyletear/personal-dev-blog/issues/new) Please include sample queries and their corresponding result.
 
+## Further help
+
+* To get more help on the Python CLI use ng help or go check out the Python CLI README and Python documentation.
 
 ## Sources
 
