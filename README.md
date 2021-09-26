@@ -14,13 +14,9 @@
 ## User Story
 
 1. As a user, I would like to see the blogs other people have posted.
-2. As a user, I would like to vote on the blog they liked and give it a downvote or upvote.
-3. As a user, I would like to be signed in for me to leave a comment
-4. As a user, I would like to receive a welcoming email once I sign up.
-5. As a user, I would like to view the blogs I have created in my profile page.
-6. As a user, I would like to comment on the different pitches and leave feedback.
-7. As a user, I would like to submit a blog in any category.
-8. As a user, I would like to view the different categories.            
+2. As a user, I would like to be signed in for me to leave a comment
+3. As a user, I would like to receive a welcoming email once I sign up.
+4. As a user, I would like to comment on the different blogs and leave feedback.   
 
 
 
@@ -72,18 +68,7 @@
   - Install dependancies that will create an environment for the app to run:
        ```
        $ pip3 install -r requirements
-       ```
-  <!-- - Edit the start.sh file to prepare your environment variables:
-        export DATABASE_URL='postgresql+psycopg2://username:password@localhost/pitchit'
-        export SECRET_KEY='Your secret key'
-        export MAIL_USERNAME='Your email'
-        export MAIL_PASSWORD='Your email password'
-  - Run database migrations:
-        python manage.py db init
-        python manage.py db migrate -m "initial migration"
-        python manage.py db upgrade -->
-  - Run chmod a+x start.sh
-  - Run ./start.py
+  - Run python3 run.py
   - Note this will work if you've properly configured your app with the required dependencies 
   - Access the application through `localhost:5000`
 
