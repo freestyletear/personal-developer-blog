@@ -117,7 +117,7 @@ To fix a bug or enhance an existing module, follow these steps:
 
 ## Known Bugs / Feature Request
 
-* As off the date this was documented there were no bugs detected.
+* At the date of build, at the comment section deleting comment was not fully functional instade it was deleting the entire post.
 * If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/freestyletear/personal-dev-blog/issues/new) by including your search query and the expected result.
 * If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/freestyletear/personal-dev-blog/issues/new) Please include sample queries and their corresponding result.
 
