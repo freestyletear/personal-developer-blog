@@ -11,6 +11,9 @@
 
 ## Description
 
+This application shows random quotes and it's authors to the users. The users can register to the app and log in to post their quotes or blogs on the website. They can also comment on other user's post, comment on their own or delete their comments if they found innapropriate.
+The application shows the date when the post was posted and also when the comment was posted.
+
 ## User Story
 
 1. As a user, I would like to see the blogs other people have posted.
