@@ -4,7 +4,7 @@
 
 <p align="center"> This project was created with Python version 3 </p>
 
-===============================================================================================================
+============================================================================================================
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=freestyletear" alt="freestyletear github profile trophy's" /></a> </p>
 
 [![GitHub Issues](https://img.shields.io/github/issues/freestyletear/personal-developer-blog)](https://freestyletear.github.io/personal-developer-blog/issues)
