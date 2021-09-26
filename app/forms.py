@@ -34,3 +34,34 @@ class LoginForm(FlaskForm):
         'Enter Registered Password Here...', validators=[DataRequired()])
     remember = BooleanField('Remember me')
     submit = SubmitField('Login')
+
+
+class UpdateAccountForm(FlaskForm):
+    username = StringField('Enter The New Desired Username', validators=[
+                           DataRequired(), Length(min=2, max=20)])
+    email = StringField('Enter The New Valid Email Address',
+                        validators=[DataRequired(), Email()])
+    submit = SubmitField('Update')
+
+    def validate_username(self, username):
+        if username.data != current_user.username:
+            user = User.query.filter_by(username=username.data).first()
+            if user:
+                raise ValidationError('Username already in use')
+
+    def validate_email(self, email):
+        if email.data != current_user.email:
+            user = User.query.filter_by(email=email.data).first()
+            if user:
+                raise ValidationError('Email taken')
+
+
+class PostForm(FlaskForm):
+    title = StringField('Title', validators=[DataRequired()])
+    content = TextAreaField('Blog', validators=[DataRequired()])
+    submit = SubmitField('Post')
+
+
+class CommentForm(FlaskForm):
+    content = TextAreaField("Add comment", validators=[DataRequired()])
+    submit = SubmitField("Comment")
