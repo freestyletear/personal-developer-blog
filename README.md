@@ -67,8 +67,24 @@
   - Read the specs and requirements files and Install all the requirements.
   - Install dependancies that will create an environment for the app to run:
        ```
-       $ pip3 install -r requirements
-  - Run python3 run.py
+       $ pip install -r requirements
+  - Create you database
+    - open python shell
+        ```
+        $ python3
+        ```
+        - Then
+        ```
+        >>> from app import db
+        ```
+
+        ```
+        >>> db.create_all()
+        ```
+  - Run 
+    ```
+    python3 run.py
+    ```
   - Note this will work if you've properly configured your app with the required dependencies 
   - Access the application through `localhost:5000`
 
